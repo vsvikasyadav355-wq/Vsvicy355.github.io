@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Web & Digital Health</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #007bff; color: white; padding: 1rem; text-align: center; }
+        nav { background-color: #0056b3; padding: 0.5rem; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; }
+        main { padding: 2rem; max-width: 1200px; margin: auto; }
+        section { margin-bottom: 2rem; }
+        h2 { color: #007bff; }
+        ul { list-style-type: disc; margin-left: 1rem; }
+        footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
+        @media (max-width: 768px) { nav a { display: block; margin: 0.5rem 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Medicine as a Web: Exploring Digital Health</h1>
+        <p>An interconnected guide to medical knowledge and technology.</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#medicine">Medicine Web</a>
+        <a href="#digital">Digital Health</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to the Medicine Web</h2>
+            <p>Medicine is a vast network of knowledge, from anatomy to specialties. Discover how digital health enhances it.</p>
+            <img src="https://via.placeholder.com/800x400?text=Medicine+Web+Diagram" alt="Conceptual diagram of medicine web" style="width:100%; max-width:800px;">
+        </section>
+        <section id="medicine">
+            <h2>Core Nodes in Medicine</h2>
+            <h3>Foundations of Medicine</h3>
+            <ul>
+                <li>Anatomy and Physiology: Body structures and functions.</li>
+                <li>Pathology: Disease mechanisms.</li>
+                <li>Pharmacology: Drugs and effects.</li>
+            </ul>
+            <h3>Medical Specialties</h3>
+            <ul>
+                <li>Internal Medicine: Adult diseases.</li>
+                <li>Surgery: Invasive procedures.</li>
+                <li>Pediatrics: Child care.</li>
+            </ul>
+            <!-- Add more sections as needed -->
+        </section>
+        <section id="digital">
+            <h2>Digital Health Overview</h2>
+            <h3>Key Components</h3>
+            <ul>
+                <li>Telemedicine: Virtual consultations.</li>
+                <li>Wearables: Real-time health tracking.</li>
+                <li>AI: Diagnostic tools.</li>
+            </ul>
+            <h3>Benefits</h3>
+            <ul>
+                <li>Improved access and cost savings.</li>
+                <li>Personalized care via data.</li>
+            </ul>
+            <!-- Add challenges and connections -->
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://www.who.int">WHO - World Health Organization</a></li>
+                <li><a href="https://www.nih.gov">NIH - National Institutes of Health</a></li>
+                <li>Apps: MyFitnessPal for wearables.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/your-email" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Medicine Web Site. All rights reserved. Consult professionals for medical advice.</p>
+    </footer>
+    <script>
+        // Simple JS for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
